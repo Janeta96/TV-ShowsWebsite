@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ADLaM Display Regular", sans-serif;
+    color: #f8c9d0;
+    font-weight: bold;
+
+
+}
+
+body {
+    background-color: #f5f6c1;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #C0A4FB;
+    box-shadow: 10px 10px 10px #f8c9d0;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+}
+#logo:hover{
+    opacity: 0.8;
+}
+
+
+.searchBox {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-right: 20px;
+
+}
+
+#searchFields {
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 700px;
+    background: #f5f6c1;
+    font-family: 'fantasy', serif;
+    font-size: 15px;
+}
+
+#featured-button {
+    background-color: #f8c9d0;
+    color: #f5f6c1;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #f5f6c1;
+}
+#featured-button:hover{
+    opacity: 0.8;
+}
+
+#featured-button:active {
+    background-color: #a770d4;
+}
+
+.listContainer {
+    width: 100%;
+    min-height: 100vh;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0), #151515), url(19198445.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#resultsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+#resultsList div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #f8c9d0;
+    transition: transform 0.5s;
+}
+
+#resultsList p {
+    color: #C0A4FB;
+    margin: 10px 0;
+}
+
+#resultsList img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#resultsList div:hover {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+#resultsList p.no-results-message{
+    text-align: center;
+    color: #719ed9;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+
+
+}
+
+
+
+
